@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>RPS Game</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script	src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Example default navbar from 
+	https://getbootstrap.com/docs/3.3/components/ -->
+	<nav class="navbar navbar-default">
+	  <div class="container"> 
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Rock-Paper-Scissors</a>
+	    </div>
+
+		    
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		      	<li class="active"><a href="home.html">Home</a></li>
+		      	<li><a href="">About</a></li>
+		      	<li><a href="">Contact</a></li>
+		      </ul>
+		     
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="#">Sign Up <i class="fa fa-user-plus"></i></a></li>
+		        <li><a href="#">Login <i class="fa fa-user"></i></a></li>
+		      </ul>
+		    </div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron">
+			<div id="content">
+			<h1 class="text-center display-1"><i class="fa fa-hand-rock-o"></i> ROCK-PAPER-SCISSORS <i class="fa fa-hand-rock-o"></i></h1>
+			<p class="text-center display-1" id="trigger">Choose your weapon, do battle with the computer and win great prizes!</p>
+			<div id="buttons">
+				<div><button onclick="reset()" class="btn btn-danger p-5">Reset battle arena</button></div>
+				<br>
+				<div>
+					<button onclick="game(3)" class="btn btn-info p-5"><i class="fa fa-hand-rock-o"></i> ROCK</button>
+					<button onclick="game(2)" class="btn btn-info p-5"><i class="fa fa-hand-paper-o"></i> PAPER</button>
+					<button onclick="game(1)" class="btn btn-info p-5"><i class="fa fa-hand-scissors-o"></i> SCISSORS</button>
+				</div>
+			</div>
+			<div id="result"></div>
+			</div>
+		</div>
+	</div>
+
+
+<script	src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
